@@ -15,11 +15,25 @@
   --main-title-color: #FFC2E6;
   --title-color: #353430;
   --text-color: #353430;
-
-.page__heading-title {
-  color: var(--text-color);
+  --decoration-color: #353430;
+  --color-hover: rgba(53, 52, 48, 0.4);
+.header__decoration-rec {
+  display: none;
 }
-.header-decoration-rec {
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --bg-image: url("../images/cover-image-light.png");
+  --bg-color: #FFC2E6;
+  --accent-color: #FF8DCB;
+  --main-title-color: #FFC2E6;
+  --title-color: #353430;
+  --text-color: #353430;
+  --decoration-color: #353430;
+  --color-hover: rgba(53, 52, 48, 0.4);
+  }
+  .header__decoration-rec {
   display: none;
 }
 }
